@@ -1,0 +1,79 @@
+{
+  "185.220.101.42": {
+    "country": "DE",
+    "as_owner": "Tor Exit Node / Zwiebelfreunde e.V.",
+    "last_analysis_stats": {
+      "malicious": 19,
+      "suspicious": 4,
+      "harmless": 58,
+      "undetected": 11
+    },
+    "reputation": -78
+  },
+  "45.155.205.233": {
+    "country": "RU",
+    "as_owner": "Selectel Network Scanner Pool",
+    "last_analysis_stats": {
+      "malicious": 14,
+      "suspicious": 3,
+      "harmless": 61,
+      "undetected": 14
+    },
+    "reputation": -54
+  },
+  "91.240.118.172": {
+    "country": "NL",
+    "as_owner": "Serverius Holding B.V.",
+    "last_analysis_stats": {
+      "malicious": 11,
+      "suspicious": 2,
+      "harmless": 64,
+      "undetected": 15
+    },
+    "reputation": -42
+  },
+  "194.26.29.114": {
+    "country": "SC",
+    "as_owner": "CloudAssets Hosting Ltd",
+    "last_analysis_stats": {
+      "malicious": 7,
+      "suspicious": 3,
+      "harmless": 68,
+      "undetected": 14
+    },
+    "reputation": -25
+  },
+  "103.145.13.88": {
+    "country": "VN",
+    "as_owner": "Viettel IDC",
+    "last_analysis_stats": {
+      "malicious": 5,
+      "suspicious": 2,
+      "harmless": 70,
+      "undetected": 15
+    },
+    "reputation": -18
+  },
+  "192.168.10.25": {
+    "country": "LAN",
+    "as_owner": "Internal Corporate Subnet",
+    "last_analysis_stats": {
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 85,
+      "undetected": 7
+    },
+    "reputation": 0
+  },
+  "10.0.5.14": {
+    "country": "LAN",
+    "as_owner": "Internal Corporate Subnet",
+    "last_analysis_stats": {
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 86,
+      "undetected": 6
+    },
+    "reputation": 0
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "result": "OK",
+  "data": {
+    "search": [
+      {
+        "id": "CVE-2024-6387",
+        "title": "OpenSSH Server RegreSSHion Unauthenticated Remote Code Execution",
+        "cvss": {
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        "published": "2024-07-01",
+        "affected_software": "OpenSSH < 9.8p1",
+        "exploit_available": true
+      },
+      {
+        "id": "CVE-2024-3400",
+        "title": "PAN-OS GlobalProtect Gateway Arbitrary File Creation and Command Injection",
+        "cvss": {
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        },
+        "published": "2024-04-12",
+        "affected_software": "Palo Alto PAN-OS 10.2 / 11.0",
+        "exploit_available": true
+      },
+      {
+        "id": "CVE-2023-44487",
+        "title": "HTTP/2 Rapid Reset Attack Denial of Service Vulnerability",
+        "cvss": {
+          "score": 7.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "published": "2023-10-10",
+        "affected_software": "nginx / Apache httpd / Envoy",
+        "exploit_available": true
+      },
+      {
+        "id": "CVE-2021-44228",
+        "title": "Apache Log4j2 JNDI Lookup Remote Code Execution (Log4Shell)",
+        "cvss": {
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        },
+        "published": "2021-12-10",
+        "affected_software": "Apache Log4j 2.0-beta9 - 2.14.1",
+        "exploit_available": true
+      },
+      {
+        "id": "CVE-2024-45337",
+        "title": "Go x/crypto/ssh ServerConfig PublicKeyCallback Authorization Bypass",
+        "cvss": {
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        "published": "2024-12-11",
+        "affected_software": "golang.org/x/crypto < 0.31.0",
+        "exploit_available": false
+      },
+      {
+        "id": "CVE-2024-27316",
+        "title": "Apache HTTP Server HTTP/2 CONTINUATION Frames Memory Exhaustion",
+        "cvss": {
+          "score": 6.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "published": "2024-04-03",
+        "affected_software": "Apache HTTP Server 2.4.17 - 2.4.58",
+        "exploit_available": false
+      },
+      {
+        "id": "CVE-2023-50868",
+        "title": "DNSSEC KeyTrap Resource Exhaustion in Recursive Resolvers",
+        "cvss": {
+          "score": 5.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        "published": "2024-02-13",
+        "affected_software": "BIND 9 / Unbound",
+        "exploit_available": false
+      }
+    ]
+  }
+}
