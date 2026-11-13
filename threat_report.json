@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-11-07T10:41:39",
+  "summary": {
+    "total_ips_analyzed": 7,
+    "malicious_ips_blocked": 5,
+    "total_vulnerabilities_checked": 7,
+    "critical_vulnerabilities_found": 5,
+    "total_response_actions": 10
+  },
+  "suspicious_ips": [
+    {
+      "src_ip": "185.220.101.42",
+      "dns_queries": 64,
+      "suricata_alerts": 18,
+      "primary_signature": "ET TROJAN CobaltStrike Beacon DNS Tunneling",
+      "vt_malicious": 19,
+      "vt_suspicious": 4,
+      "country": "DE",
+      "as_owner": "Tor Exit Node / Zwiebelfreunde e.V.",
+      "risk_score": 121.4,
+      "is_threat": true
+    },
+    {
+      "src_ip": "45.155.205.233",
+      "dns_queries": 41,
+      "suricata_alerts": 14,
+      "primary_signature": "ET SCAN Nmap Scripting Engine SSH Brute-Force",
+      "vt_malicious": 14,
+      "vt_suspicious": 3,
+      "country": "RU",
+      "as_owner": "Selectel Network Scanner Pool",
+      "risk_score": 87.6,
+      "is_threat": true
+    },
+    {
+      "src_ip": "91.240.118.172",
+      "dns_queries": 29,
+      "suricata_alerts": 9,
+      "primary_signature": "ET EXPLOIT Apache Log4j RCE Attempt (CVE-2021-44228)",
+      "vt_malicious": 11,
+      "vt_suspicious": 2,
+      "country": "NL",
+      "as_owner": "Serverius Holding B.V.",
+      "risk_score": 61.9,
+      "is_threat": true
+    },
+    {
+      "src_ip": "194.26.29.114",
+      "dns_queries": 19,
+      "suricata_alerts": 6,
+      "primary_signature": "ET DNS High Volume Suspicious TXT Queries",
+      "vt_malicious": 7,
+      "vt_suspicious": 3,
+      "country": "SC",
+      "as_owner": "CloudAssets Hosting Ltd",
+      "risk_score": 40.4,
+      "is_threat": true
+    },
+    {
+      "src_ip": "103.145.13.88",
+      "dns_queries": 16,
+      "suricata_alerts": 4,
+      "primary_signature": "ET WEB_SERVER SQL Injection Select Statement",
+      "vt_malicious": 5,
+      "vt_suspicious": 2,
+      "country": "VN",
+      "as_owner": "Viettel IDC",
+      "risk_score": 29.6,
+      "is_threat": true
+    }
+  ],
+  "critical_vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-3400",
+      "title": "PAN-OS GlobalProtect Gateway Arbitrary File Creation and Command Injection",
+      "cvss_score": 10.0,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "published": "2024-04-12",
+      "affected_software": "Palo Alto PAN-OS 10.2 / 11.0",
+      "exploit_available": true
+    },
+    {
+      "cve_id": "CVE-2021-44228",
+      "title": "Apache Log4j2 JNDI Lookup Remote Code Execution (Log4Shell)",
+      "cvss_score": 9.8,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "published": "2021-12-10",
+      "affected_software": "Apache Log4j 2.0-beta9 - 2.14.1",
+      "exploit_available": true
+    },
+    {
+      "cve_id": "CVE-2024-45337",
+      "title": "Go x/crypto/ssh ServerConfig PublicKeyCallback Authorization Bypass",
+      "cvss_score": 9.1,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "published": "2024-12-11",
+      "affected_software": "golang.org/x/crypto < 0.31.0",
+      "exploit_available": false
+    },
+    {
+      "cve_id": "CVE-2024-6387",
+      "title": "OpenSSH Server RegreSSHion Unauthenticated Remote Code Execution",
+      "cvss_score": 8.1,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "published": "2024-07-01",
+      "affected_software": "OpenSSH < 9.8p1",
+      "exploit_available": true
+    },
+    {
+      "cve_id": "CVE-2023-44487",
+      "title": "HTTP/2 Rapid Reset Attack Denial of Service Vulnerability",
+      "cvss_score": 7.5,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "published": "2023-10-10",
+      "affected_software": "nginx / Apache httpd / Envoy",
+      "exploit_available": true
+    }
+  ],
+  "response_actions_log": [
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "185.220.101.42",
+      "action_type": "IP_BLOCK_AND_NOTIFY",
+      "command": "iptables -A INPUT -s 185.220.101.42 -j DROP",
+      "notification_channel": "Telegram & Email (Simulated)",
+      "reason": "ET TROJAN CobaltStrike Beacon DNS Tunneling"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "45.155.205.233",
+      "action_type": "IP_BLOCK_AND_NOTIFY",
+      "command": "iptables -A INPUT -s 45.155.205.233 -j DROP",
+      "notification_channel": "Telegram & Email (Simulated)",
+      "reason": "ET SCAN Nmap Scripting Engine SSH Brute-Force"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "91.240.118.172",
+      "action_type": "IP_BLOCK_AND_NOTIFY",
+      "command": "iptables -A INPUT -s 91.240.118.172 -j DROP",
+      "notification_channel": "Telegram & Email (Simulated)",
+      "reason": "ET EXPLOIT Apache Log4j RCE Attempt (CVE-2021-44228)"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "194.26.29.114",
+      "action_type": "IP_BLOCK_AND_NOTIFY",
+      "command": "iptables -A INPUT -s 194.26.29.114 -j DROP",
+      "notification_channel": "Telegram & Email (Simulated)",
+      "reason": "ET DNS High Volume Suspicious TXT Queries"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "103.145.13.88",
+      "action_type": "IP_BLOCK_AND_NOTIFY",
+      "command": "iptables -A INPUT -s 103.145.13.88 -j DROP",
+      "notification_channel": "Telegram & Email (Simulated)",
+      "reason": "ET WEB_SERVER SQL Injection Select Statement"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "CVE-2024-3400",
+      "action_type": "PATCH_TICKET_AND_ALERT",
+      "command": "ansible-playbook patch_cve.yml -e cve_id=CVE-2024-3400",
+      "notification_channel": "Email Security Team (Simulated)",
+      "reason": "High CVSS score (10.0)"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "CVE-2021-44228",
+      "action_type": "PATCH_TICKET_AND_ALERT",
+      "command": "ansible-playbook patch_cve.yml -e cve_id=CVE-2021-44228",
+      "notification_channel": "Email Security Team (Simulated)",
+      "reason": "High CVSS score (9.8)"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "CVE-2024-45337",
+      "action_type": "PATCH_TICKET_AND_ALERT",
+      "command": "ansible-playbook patch_cve.yml -e cve_id=CVE-2024-45337",
+      "notification_channel": "Email Security Team (Simulated)",
+      "reason": "High CVSS score (9.1)"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "CVE-2024-6387",
+      "action_type": "PATCH_TICKET_AND_ALERT",
+      "command": "ansible-playbook patch_cve.yml -e cve_id=CVE-2024-6387",
+      "notification_channel": "Email Security Team (Simulated)",
+      "reason": "High CVSS score (8.1)"
+    },
+    {
+      "timestamp": "2026-11-07 10:41:39",
+      "target": "CVE-2023-44487",
+      "action_type": "PATCH_TICKET_AND_ALERT",
+      "command": "ansible-playbook patch_cve.yml -e cve_id=CVE-2023-44487",
+      "notification_channel": "Email Security Team (Simulated)",
+      "reason": "High CVSS score (7.5)"
+    }
+  ]
+}
